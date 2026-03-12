@@ -24,11 +24,10 @@ justify-content:center;
 align-items:center;
 
 background:
-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)),
 url("Images/images/bigcats/IMG_20210120_161341.jpg");
 
 background-size:cover;
-background-position:center;
 
 }
 
@@ -45,34 +44,13 @@ background:linear-gradient(90deg,#f6e27a,#d4af37,#f6e27a);
 -webkit-background-clip:text;
 color:transparent;
 
-margin:0;
-
 }
 
 
 
 .subtitle{
 
-color:#ccc;
-margin-top:10px;
-
-}
-
-
-
-.lang button{
-
-margin:5px;
-
-padding:6px 14px;
-
-background:black;
-
-border:1px solid #d4af37;
-
-color:#d4af37;
-
-border-radius:6px;
+color:#bbb;
 
 }
 
@@ -94,20 +72,6 @@ text-decoration:none;
 
 font-family:"Cinzel",serif;
 
-font-weight:bold;
-
-display:inline-block;
-
-transition:0.3s;
-
-}
-
-
-
-.hero-btn:hover{
-
-transform:scale(1.05);
-
 }
 
 
@@ -123,22 +87,6 @@ padding:40px 20px;
 line-height:1.8;
 
 font-size:18px;
-
-}
-
-
-
-h2{
-
-font-family:"Cinzel",serif;
-
-background:linear-gradient(90deg,#f6e27a,#d4af37);
-
--webkit-background-clip:text;
-
-color:transparent;
-
-margin-top:40px;
 
 }
 
@@ -161,30 +109,7 @@ padding:20px;
 .gallery img{
 
 width:100%;
-
 border-radius:12px;
-
-cursor:pointer;
-
-transition:0.3s;
-
-}
-
-
-
-.gallery img:hover{
-
-transform:scale(1.05);
-
-}
-
-
-
-.prices ul{
-
-list-style:none;
-
-padding:0;
 
 }
 
@@ -193,8 +118,6 @@ padding:0;
 .prices li{
 
 margin:10px 0;
-
-font-size:18px;
 
 }
 
@@ -214,13 +137,11 @@ background:linear-gradient(135deg,#f6e27a,#d4af37);
 
 border-radius:12px;
 
-text-decoration:none;
-
 color:black;
 
-font-family:"Cinzel",serif;
+text-decoration:none;
 
-font-weight:bold;
+font-family:"Cinzel",serif;
 
 }
 
@@ -241,132 +162,5 @@ border-radius:12px;
 color:#d4af37;
 
 text-decoration:none;
-
-transition:0.3s;
-
-}
-
-
-
-.social-btn:hover{
-
-background:#d4af37;
-
-color:black;
-
-}
-
-
-
-footer{
-
-margin-top:40px;
-
-color:#888;
-
-padding-bottom:40px;
-
-}
-
-
-
-#viewer{
-
-display:none;
-
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-background:rgba(0,0,0,0.95);
-
-align-items:center;
-justify-content:center;
-
-z-index:999;
-
-}
-
-
-
-#viewer img{
-
-max-width:90%;
-max-height:90%;
-
-border-radius:10px;
-
-}
-
-
-
-.close{
-
-position:absolute;
-
-top:20px;
-right:30px;
-
-font-size:30px;
-
-color:white;
-
-cursor:pointer;
-
-}
-
-
-
-@media(max-width:600px){
-
-h1{
-
-font-size:38px;
-
-}
-
-.about{
-
-font-size:17px;
-
-}
-
-}
-.social-icons{
-
-display:flex;
-justify-content:center;
-gap:30px;
-margin-top:20px;
-
-}
-
-.social-icons a{
-
-width:40px;
-height:40px;
-
-}
-
-.social-icons svg{
-
-fill:#d4af37;
-
-width:100%;
-height:100%;
-
-transition:0.3s;
-
-}
-
-.social-icons svg:hover{
-
-transform:scale(1.2);
-
-fill:#f6e27a;
 
 }
