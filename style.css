@@ -1,207 +1,161 @@
 body{
-
 margin:0;
-padding:0;
-
 background:black;
 color:white;
-
 font-family:"Playfair Display",serif;
-
 text-align:center;
-
 }
 
-/* HEADER */
-
 header{
-
+padding:120px 20px;
 background:
-linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.85)),
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.9)),
 url("Images/images/bigcats/IMG_20210120_161341.jpg");
-
 background-size:cover;
 background-position:center;
-
-padding:120px 20px;
-
 }
 
 h1{
-
-font-family:"Cinzel",serif;
-
-font-size:52px;
-
+font-family:"Cinzel";
 color:#d4af37;
-
-letter-spacing:2px;
-
-margin-bottom:10px;
-
+font-size:52px;
 }
 
 .subtitle{
-
 color:#ddd;
-
-font-size:18px;
-
 margin-bottom:20px;
-
 }
 
-/* LANGUAGE BUTTONS */
-
 .lang button{
-
-margin:6px;
-padding:8px 18px;
-
-font-family:"Cinzel",serif;
-
-border-radius:10px;
-
 border:2px solid #d4af37;
-
 background:black;
-
 color:#d4af37;
-
-font-weight:bold;
-
+padding:8px 18px;
+margin:5px;
+border-radius:10px;
 cursor:pointer;
-
-transition:0.3s;
-
 }
 
 .lang button:hover{
-
-background:linear-gradient(135deg,#f6e27a,#d4af37);
-
+background:#d4af37;
 color:black;
-
 }
-
-/* MAIN BUTTONS */
 
 .hero-btn{
-
 display:inline-block;
-
-margin:12px;
-
+margin:10px;
 padding:16px 34px;
-
-font-size:20px;
-
-border-radius:18px;
-
-text-decoration:none;
-
-font-family:"Cinzel",serif;
-
+border-radius:20px;
 background:linear-gradient(135deg,#f6e27a,#d4af37);
-
 color:black;
-
-transition:0.3s;
-
+text-decoration:none;
+font-family:"Cinzel";
 }
-
-.hero-btn:hover{
-
-transform:scale(1.05);
-
-}
-
-/* SECTIONS */
 
 section{
-
 padding:70px 20px;
-
 max-width:1000px;
-
 margin:auto;
-
 }
-
-/* TITLES */
 
 h2{
-
-font-family:"Cinzel",serif;
-
+font-family:"Cinzel";
 color:#d4af37;
-
-font-size:34px;
-
-margin-bottom:30px;
-
 }
-
-/* ABOUT TEXT */
-
-.about p{
-
-font-size:20px;
-
-line-height:1.8;
-
-color:#e8e8e8;
-
-max-width:800px;
-
-margin:auto;
-
-}
-
-/* GALLERY */
 
 .gallery{
-
 display:grid;
-
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-gap:22px;
-
+gap:20px;
 }
 
 .gallery img{
-
 width:100%;
-
-border-radius:16px;
-
+border-radius:15px;
 cursor:pointer;
-
-transition:0.3s;
-
+transition:.3s;
 }
 
 .gallery img:hover{
-
 transform:scale(1.05);
+}
 
+.prices li{
+margin:12px 0;
+font-size:20px;
+}
+
+.btn{
+display:block;
+width:250px;
+margin:20px auto;
+padding:16px;
+background:linear-gradient(135deg,#f6e27a,#d4af37);
+border-radius:20px;
+color:black;
+text-decoration:none;
+font-family:"Cinzel";
+}
+
+.social{
+margin-top:20px;
+}
+
+.social-btn{
+display:inline-block;
+margin:10px;
+padding:12px 28px;
+border:2px solid #d4af37;
+border-radius:15px;
+color:#d4af37;
+text-decoration:none;
+font-family:"Cinzel";
+}
+
+.social-btn:hover{
+background:#d4af37;
+color:black;
+}
+
+footer{
+padding:30px;
+color:#aaa;
 }
 
 /* IMAGE VIEWER */
 
 #viewer{
-
 position:fixed;
-
 top:0;
 left:0;
-
 width:100%;
 height:100%;
-
-background:rgba(0,0,0,0.95);
-
+background:rgba(0,0,0,.95);
 display:none;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+z-index:999;
+}
 
-align-items
+#viewer img{
+max-width:90%;
+max-height:80%;
+}
+
+.close{
+position:absolute;
+top:20px;
+right:30px;
+font-size:40px;
+cursor:pointer;
+}
+
+.nav button{
+font-size:30px;
+margin:10px;
+background:none;
+border:none;
+color:white;
+cursor:pointer;
+}
