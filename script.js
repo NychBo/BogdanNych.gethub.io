@@ -45,3 +45,28 @@ document.getElementById("viewer-img").src=images[index].src
 }
 
 })
+let startX=0
+
+document.getElementById("viewer").addEventListener("touchstart",e=>{
+startX=e.touches[0].clientX
+})
+
+document.getElementById("viewer").addEventListener("touchend",e=>{
+
+let endX=e.changedTouches[0].clientX
+
+if(endX-startX>50){
+
+index=(index-1+images.length)%images.length
+viewerImg.src=images[index].src
+
+}
+
+if(startX-endX>50){
+
+index=(index+1)%images.length
+viewerImg.src=images[index].src
+
+}
+
+})
